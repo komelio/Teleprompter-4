@@ -440,19 +440,19 @@ public class MainActivity extends BaseActivity implements
         final MainListFragment listFragment = getMainListFragment();
         final MenuItem menuRenamePlaylist = mMenu.findItem(R.id.menu_rename_playlist);
 
-        Dialog d = new AlertDialog.Builder(this)
-                .setTitle(getResources().getString(R.string.load_existing_playlist))
-                .setNegativeButton(getResources().getString(R.string.cancel), null)
-                .setItems(items, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dlg, int position) {
-                        tryLoadLyricsFromPlaylist(listFragment, items[position]);
-                        menuRenamePlaylist.setVisible(true);
-
-                    }
-                })
-                .create();
-        d.show();
+//        Dialog d = new AlertDialog.Builder(this)
+//                .setTitle(getResources().getString(R.string.load_existing_playlist))
+//                .setNegativeButton(getResources().getString(R.string.cancel), null)
+//                .setItems(items, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dlg, int position) {
+//                        tryLoadLyricsFromPlaylist(listFragment, items[position]);
+//                        menuRenamePlaylist.setVisible(true);
+//
+//                    }
+//                })
+//                .create();
+//        d.show();
     }
 
     private void tryLoadLyricsFromPlaylist(MainListFragment listFragment, String playListName) {

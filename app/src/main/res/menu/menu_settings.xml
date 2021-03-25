@@ -26,13 +26,6 @@
         android:visible="false"
         android:onClick="startSettingsFromMain"/>
     <item
-        android:icon="@drawable/ic_playlist_load"
-        android:id="@+id/menu_load_playlist"
-        android:title="@string/menu_item_load_playlist_title"
-        android:orderInCategory="95"
-        app:showAsAction="ifRoom"
-        android:onClick="loadPlaylist"/>
-    <item
         android:id="@+id/menu_rename_playlist"
         android:title="@string/menu_item_rename_playlist_title"
         android:orderInCategory="96"
